@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello github page</title>
+</head>
+<style>
+    * {
+        margin: 0 auto;
+    }
+    #app {
+        width: 100vw;
+        height: 100vh;
+        background-color: pink;
+        display: grid;
+        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: 
+        "head head head"
+        "side body body"
+        "foot foot foot";
+    }
+    #app div {
+        margin: 2px;
+        border: 2px solid black;
+    }
+    #app :nth-child(1) {
+        grid-area: head;
+    }
+    #app :nth-child(2) {
+        grid-area: side;
+    }
+    #app :nth-child(3) {
+        grid-area: body;
+    }
+    #app :nth-child(4) {
+        grid-area: foot;
+    }
+</style>
+<body>
+    <div id="app">
+        <div>head</div>
+        <div>side</div>
+        <div>body</div>
+        <div>foot</div>
+    </div>
+</body>
+</html>
